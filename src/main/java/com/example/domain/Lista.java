@@ -3,9 +3,8 @@ package com.example.domain;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -28,6 +27,10 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity // declaramos la clase como entidad
+@JsonIdentityInfo(
+        generator = ObjectIdGenerators.PropertyGenerator.class,
+        property = "id"
+)
 @Table(name="LISTA")
 public class Lista {
 
@@ -40,7 +43,7 @@ public class Lista {
 	private String nombre;
 	
 	// El JSONBAck... es la diferencia de SpringWeb
-	@JsonBackReference // Decimos que la parte MANY es BACKREFERNECE (padre)
+	//@JsonBackReference // Decimos que la parte MANY es BACKREFERNECE (padre)
 	@ManyToOne // un ciclista tiene un equipo, un equipo varios ciclistas. ESTA ES LA PARTE MANY
 	@JoinColumn (name = "usuarioid") // Se une mediante la columna team_id de la parte ONE
 	private Usuario usuario;
@@ -52,7 +55,7 @@ public class Lista {
 		}*/
 	
 	// Relación Many-to-Many con la entidad Pelicula
-    @JsonManagedReference
+    //@JsonManagedReference
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name = "PELICULALISTA", // Nombre de la tabla intermedia

@@ -3,9 +3,9 @@ package com.example.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.example.domain.Votos;
+import com.example.domain.Cartelera;
 
 @Repository
-public interface VotosRepository extends JpaRepository<Votos, Integer>{
+public interface CarteleraRepository extends JpaRepository <Cartelera,Integer>{
 
 }

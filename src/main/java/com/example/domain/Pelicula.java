@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -24,6 +26,10 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity // declaramos la clase como entidad
+@JsonIdentityInfo(
+        generator = ObjectIdGenerators.PropertyGenerator.class,
+        property = "id"
+)
 @Table(name="PELICULA")// name se usa en caso de que la columna se llame diferente a la clase
 public class Pelicula {
 
@@ -52,7 +58,7 @@ public class Pelicula {
     private String enCartel;
 	
 	// Relación Many-to-Many con la entidad Lista
-    @JsonBackReference
+    //@JsonBackReference
     @ManyToMany(mappedBy = "peliculas") // Relación gestionada por la clase Lista
     private List<Lista> listas = new ArrayList<>();
 }

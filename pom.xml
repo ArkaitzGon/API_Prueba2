@@ -65,8 +65,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-		
-		
+		<!-- Dependencia para trabajar con las anotaciones de JPA -->
+		<dependency>
+		    <groupId>javax.persistence</groupId>
+		    <artifactId>javax.persistence-api</artifactId>
+		    <version>2.2</version>
+		</dependency>
+
 	</dependencies>
 	
 	<repositories>

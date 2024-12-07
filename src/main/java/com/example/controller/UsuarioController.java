@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.domain.Lista;
 import com.example.domain.Usuario;
 import com.example.repository.UsuarioRepository;
 
@@ -33,7 +32,10 @@ public class UsuarioController {
 	//Devuelve pelicula por ID
 	@GetMapping("/id/{id}")
 	public Usuario showUsuario(@PathVariable("id") int id) { 
-		return usuarioRepository.findById(id).orElse(null);
+		Usuario user = usuarioRepository.findById(id).orElse(null);
+		//Pasamos el atributo password como null por seguridad
+		user.setPassword(null);
+		return user;
 	}
 	
 	//Crear pelicula

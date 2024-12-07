@@ -3,8 +3,8 @@ package com.example.domain;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -24,6 +24,10 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity // declaramos la clase como entidad
+@JsonIdentityInfo(
+        generator = ObjectIdGenerators.PropertyGenerator.class,
+        property = "id"
+)
 @Table(name="USUARIO")
 public class Usuario {
 
@@ -32,6 +36,7 @@ public class Usuario {
     private int id;
 	@Column(name="EMAIL")
 	private String email;
+	//@JsonProperty(access)
 	@Column(name="PASSWORD")
 	private String password;
 	@Column(name="NOMBRE")
@@ -39,7 +44,7 @@ public class Usuario {
 	@Column(name="TOKEN")
 	private String token;
 	
-	@JsonManagedReference // Decimos que la parte ONE es la parte REFERENCE (hijo)
+	//@JsonManagedReference // Decimos que la parte ONE es la parte REFERENCE (hijo)
 	@OneToMany (mappedBy = "usuario",cascade = CascadeType.ALL) // Esta es la parte ONE (un team puede tener varios ciclistas). MappedBy significa que la relacion esta siendo gestionada por el atributo team de la clase cyclist
 	List <Lista> listas = new ArrayList<>(); // Al ser la parte ONE guardamos los MANY en una list de objetos padre(MANY)
 }
