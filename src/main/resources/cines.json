@@ -1,0 +1,180 @@
+{
+  "fecha": "2025-01-05",
+  "cines": [
+    {
+      "id": 1,
+      "nombre": "nombre1",
+      "url": "url1",
+      "latitud": "43.287278",
+      "longitud": "-3.0072946"
+    },
+    {
+      "id": 2,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.3408796",
+      "longitud": "-2.9906333"
+    },
+    {
+      "id": 3,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.2615002",
+      "longitud": "-2.945369"
+    },
+    {
+      "id": 4,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.2595971",
+      "longitud": "-2.9371724"
+    },
+    {
+      "id": 5,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.212087",
+      "longitud": "-3.1368904"
+    },
+    {
+      "id": 6,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.2601599",
+      "longitud": "-2.9408838"
+    },
+    {
+      "id": 7,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.311993",
+      "longitud": "-3.0208995"
+    },
+    {
+      "id": 8,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.34042",
+      "longitud": "-3.0171808"
+    },
+    {
+      "id": 9,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.2929036",
+      "longitud": "-3.0051943"
+    },
+    {
+      "id": 10,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.2992225",
+      "longitud": "-2.8865012"
+    },
+    {
+      "id": 11,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.3619488",
+      "longitud": "-3.0055847"
+    },
+    {
+      "id": 12,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "42.8624024",
+      "longitud": "-2.6702353"
+    },
+    {
+      "id": 13,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "42.9125481",
+      "longitud": "-2.7182099"
+    },
+    {
+      "id": 14,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.3252697",
+      "longitud": "-1.98415"
+    },
+    {
+      "id": 15,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.3122748",
+      "longitud": "-2.0055977"
+    },
+    {
+      "id": 16,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.3139813",
+      "longitud": "-1.9003993"
+    },
+    {
+      "id": 17,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.2669254",
+      "longitud": "-1.9764979"
+    },
+    {
+      "id": 18,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.3406595",
+      "longitud": "-1.7920615"
+    },
+    {
+      "id": 19,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.1865053",
+      "longitud": " -2.0524767"
+    },
+    {
+      "id": 20,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.3223842",
+      "longitud": "-1.97469"
+    },
+    {
+      "id": 21,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.2760253",
+      "longitud": "-2.0249214"
+    },
+    {
+      "id": 22,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.3553186",
+      "longitud": "-1.7733568"
+    },
+    {
+      "id": 23,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.3124253",
+      "longitud": "-2.0053334"
+    },
+    {
+      "id": 24,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.3093539",
+      "longitud": "-1.943411"
+    },
+    {
+      "id": 25,
+      "nombre": "null",
+      "url": "null",
+      "latitud": "43.3097575",
+      "longitud": "-1.9432406"
+    }
+  ]
+}

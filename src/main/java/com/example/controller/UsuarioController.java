@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,7 @@ import com.example.domain.Usuario;
 import com.example.repository.UsuarioRepository;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:8100, http://localhost:8101")
 @RequestMapping("/api/usuario")
 public class UsuarioController {
 
@@ -30,7 +32,7 @@ public class UsuarioController {
 	}
 	
 	//Devuelve pelicula por ID
-	@GetMapping("/id/{id}")
+	@GetMapping("/{id}")
 	public Usuario showUsuario(@PathVariable("id") int id) { 
 		Usuario user = usuarioRepository.findById(id).orElse(null);
 		//Pasamos el atributo password como null por seguridad
@@ -39,7 +41,7 @@ public class UsuarioController {
 	}
 	
 	//Crear pelicula
-	@PostMapping({"crea"})
+	@PostMapping({""})
 	@ResponseStatus (HttpStatus.CREATED)
 	public Usuario creaUsuario(@RequestBody Usuario usuario) {  
 		return usuarioRepository.save(usuario);
@@ -49,7 +51,7 @@ public class UsuarioController {
 	 * Borramos una lista
 	 * Le pasamos por parametro el ID
 	 * **/
-	@DeleteMapping("borra/{id}")
+	@DeleteMapping("/{id}")
 	@ResponseStatus (HttpStatus.NO_CONTENT)
 	public void borraUsuario(@PathVariable("id") int id) {
 		usuarioRepository.deleteById(id);
@@ -58,7 +60,7 @@ public class UsuarioController {
 	/**
 	 * Actualizamos una lista dependiendo de su id
 	 * **/
-	@PutMapping("actualiza/{id}")
+	@PutMapping("/{id}")
 	@ResponseStatus (HttpStatus.CREATED)
 	public Usuario actualizaUsuario(@RequestBody Usuario usuario, @PathVariable("id") int id) {
 		Usuario actuUsuario = usuarioRepository.findById(id).orElse(null);
@@ -66,7 +68,7 @@ public class UsuarioController {
 		actuUsuario.setEmail(usuario.getEmail());
 		actuUsuario.setPassword(usuario.getPassword());
 		actuUsuario.setNombre(usuario.getNombre());
-		actuUsuario.setToken(usuario.getToken());
+		//actuUsuario.setToken(usuario.getToken());
 		
 		return usuarioRepository.save(actuUsuario);
 	}

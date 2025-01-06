@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,6 +21,7 @@ import com.example.domain.Pelicula;
 import com.example.repository.PeliculaRepository;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:8100, http://localhost:8101")
 @RequestMapping("/api/peliculas")
 public class PeliculaController {
 
@@ -36,7 +38,7 @@ public class PeliculaController {
 	}
 	
 	//Devuelve pelicula por ID
-	@GetMapping("id/{id}")
+	@GetMapping("/{id}")
 	public Pelicula show(@PathVariable("id") int id) { 
 		/*
 		Pelicula peli = peliculaRepository.findById(id).orElse(null);
@@ -57,7 +59,7 @@ public class PeliculaController {
 	}
 	
 	//Crear pelicula
-	@PostMapping({"crea"})
+	@PostMapping({""})
 	@ResponseStatus (HttpStatus.CREATED)
 	public Pelicula creaPelicula(@RequestBody Pelicula peli) {  
 		return peliculaRepository.save(peli);
@@ -68,7 +70,7 @@ public class PeliculaController {
 	 * Borramos una pelicula
 	 * Le pasamos por parametro el ID
 	 * **/
-	@DeleteMapping("borra/{id}")
+	@DeleteMapping("/{id}")
 	@ResponseStatus (HttpStatus.NO_CONTENT)
 	public void borraPelicula(@PathVariable("id") int id) {
 		peliculaRepository.deleteById(id);
@@ -77,7 +79,7 @@ public class PeliculaController {
 	/**
 	 * Actualizamos una pelicula dependiendo de su id
 	 * **/
-	@PutMapping("actualiza/{id}")
+	@PutMapping("/{id}")
 	@ResponseStatus (HttpStatus.CREATED)
 	public Pelicula actualizaPelicula(@RequestBody Pelicula pelicula, @PathVariable("id") int id) {
 		Pelicula actuPeli = peliculaRepository.findById(id).orElse(null);
@@ -88,59 +90,17 @@ public class PeliculaController {
 		actuPeli.setGenero(pelicula.getGenero());
 		actuPeli.setReparto(pelicula.getReparto());
 		actuPeli.setResumen(pelicula.getResumen());
-		actuPeli.setValoracion(pelicula.getValoracion());
 		actuPeli.setAltoImagen(pelicula.getAltoImagen());
 		actuPeli.setAnchoImagen(pelicula.getAnchoImagen());
 
 		
 		return peliculaRepository.save(actuPeli);
 	}
-/*
-	//Busca pelicula por titulo
-	@GetMapping("/titulo/{titulo}")
-    public List<Pelicula> showTitulo(@PathVariable("titulo") String titulo) {
-        // Busca todas las películas con el título proporcionado
-        return peliculaRepository.findByTitulo(titulo);
-    }
 
-	
-	//Busca Lista de peliculas por genero y año
-	@GetMapping("/buscar/genero_año")
-	public List<Pelicula> buscarPorGeneroYAnio(
-	        @RequestParam("genero") String genero,
-	        @RequestParam("fechaEstreno") int fechaEstreno) {
-	    return peliculaRepository.findByGeneroAndFechaEstreno(genero, fechaEstreno);
-	}
-	  
-	
-	  //Busca Lista de peliculas por genero y año
-	@GetMapping("/buscar/reparto_fecha")
-	public List<Pelicula> buscarPorRepartoYAnio(
-	        @RequestParam("reparto") String reparto,
-	        @RequestParam("fechaEstreno") int fechaEstreno) {
-		System.out.println("Reparto recibido: " + reparto);
-	    return peliculaRepository.findByFechaEstrenoAndReparto(reparto, fechaEstreno);
-	}
-	*/
-	// Busca una película por género, reparto y año
-	/*@GetMapping("/buscar/genero_reparto_fecha")
-	public List<Pelicula> buscarPorGeneroRepartoYAnio(
-	        @RequestParam("genero") String genero,
-	        @RequestParam("reparto") String reparto,
-	        @RequestParam("fechaEstreno") int fechaEstreno) {
-	    return peliculaRepository.findByFechaEstrenoGeneroAndReparto(genero, reparto, fechaEstreno);
-	}*/
-	/*
-	@GetMapping("/buscar/genero_reparto_fecha")
-	public List<Pelicula> buscarPorGeneroRepartoYAnio(
-	        @RequestParam(value = "genero", required = false) String genero,
-	        @RequestParam(value = "reparto", required = false) String reparto,
-	        @RequestParam(value = "fechaEstreno", required = false) Integer fechaEstreno) {
-	    return peliculaRepository.findByGeneroRepartoAndFechaEstreno(genero, reparto, fechaEstreno);
-	}*/
 
 
 	//Devuelva una lista con todos los generos diferentes
+	
 	@GetMapping("/generos")
     public List<String> obtenerGeneros() {
         // Obtener todas las películas

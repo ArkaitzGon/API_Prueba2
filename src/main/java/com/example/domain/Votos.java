@@ -25,7 +25,13 @@ public class Votos {
 	@Column(name="PELICULAID")
 	private int peliculaId;
 	@Column(name="USUARIOID")
-	private int usuarioID;
+	private int usuarioId;
 	@Column(name="PUNTUACION")
 	private int puntuacion;
+	
+	public Votos(int peliculaID, int usuarioId, int puntuacion) {
+		this.peliculaId = peliculaID;
+		this.usuarioId = usuarioId;
+		this.puntuacion = puntuacion;
+	}
 }

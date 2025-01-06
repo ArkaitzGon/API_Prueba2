@@ -41,10 +41,10 @@ public class Usuario {
 	private String password;
 	@Column(name="NOMBRE")
 	private String nombre;
-	@Column(name="TOKEN")
-	private String token;
+	//@Column(name="TOKEN")
+	//private String token;
 	
-	//@JsonManagedReference // Decimos que la parte ONE es la parte REFERENCE (hijo)
-	@OneToMany (mappedBy = "usuario",cascade = CascadeType.ALL) // Esta es la parte ONE (un team puede tener varios ciclistas). MappedBy significa que la relacion esta siendo gestionada por el atributo team de la clase cyclist
-	List <Lista> listas = new ArrayList<>(); // Al ser la parte ONE guardamos los MANY en una list de objetos padre(MANY)
+	//@JsonManagedReference 
+	@OneToMany (mappedBy = "usuario",cascade = CascadeType.ALL) 
+	List <Lista> listas = new ArrayList<>(); 
 }

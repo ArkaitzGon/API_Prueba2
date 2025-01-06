@@ -26,4 +26,8 @@ public class Cine {
 	private String latitud;
 	@Column(name="LONGITUD")
 	private String longitud;
+	@Column(name="URL")
+	private String url;
+	@Column(name="NOMBRE")
+	private String nombre;
 }

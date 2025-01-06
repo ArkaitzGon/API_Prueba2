@@ -48,11 +48,6 @@ public class Lista {
 	@JoinColumn (name = "usuarioid") // Se une mediante la columna team_id de la parte ONE
 	private Usuario usuario;
 	
-	//Añade propiedad teamName a JSON 
-	/*@JsonProperty("usuarioID")
-	public int getUsuarioID() {
-	    return usuario != null ? usuario.getId() : null;
-		}*/
 	
 	// Relación Many-to-Many con la entidad Pelicula
     //@JsonManagedReference

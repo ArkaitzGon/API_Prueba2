@@ -5,8 +5,8 @@ package com.example.domain;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 import jakarta.persistence.Column;
@@ -46,19 +46,18 @@ public class Pelicula {
     private String reparto; // Lista de actores
 	@Column(name = "RESUMEN")
     private String resumen;
-	@Column(name = "VALORACION")
-    private Integer valoracion; // Se declara Integer porque int no permite recoger valores null
+
 	@Column(name = "IMAGEN")
     private String imagen;
 	@Column(name = "ANCHOIMAGEN")
     private int anchoImagen;
 	@Column(name = "ALTOIMAGEN")
     private int altoImagen;
-	@Column(name = "ENCARTEL")
-    private String enCartel;
+
 	
 	// Relación Many-to-Many con la entidad Lista
     //@JsonBackReference
+	@JsonIgnore //No devuelve este atributo en la respuesta
     @ManyToMany(mappedBy = "peliculas") // Relación gestionada por la clase Lista
     private List<Lista> listas = new ArrayList<>();
 }
