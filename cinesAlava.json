@@ -1,0 +1,32 @@
+[
+  {
+    "nombre":"Amurrio Antzokia",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=681",
+    "latitud":"43.05505026201502",
+    "longitud":"-2.998527973347462"
+  },
+  {
+    "nombre":"Cines Gorbeia",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=1210",
+    "latitud":"42.91257104484935",
+    "longitud":"-2.716553401222732"
+  },
+  {
+    "nombre":"Cine Municipal Llodio",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=593",
+    "latitud":"43.147269303970226",
+    "longitud":"-2.9666958979565483"
+  },
+  {
+    "nombre":"Cines Florida",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=203",
+    "latitud":"42.843975567654816",
+    "longitud":"-2.6706610072403394"
+  },
+  {
+    "nombre":"Yelmo Cines Boulevard",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=527",
+    "latitud":"42.862404304714566",
+    "longitud":"-2.668882730514457"
+  }
+]

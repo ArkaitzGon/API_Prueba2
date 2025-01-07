@@ -1,0 +1,182 @@
+[
+  {
+    "nombre":"Zornotza Aretoa",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=720",
+    "latitud":"43.220175884534434",
+    "longitud":"-2.7315331993553027"
+  },
+  {
+    "nombre":"Klaret Antzokia Zinema",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=804",
+    "latitud":"43.193706428848394",
+    "longitud":"-3.1952683704566365"
+  },
+  {
+    "nombre":"Cinesa Max Ocio",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=514",
+    "latitud":"43.28736260798031",
+    "longitud":"-3.0070976109257153"
+  },
+  {
+    "nombre":"Teatro Barakaldo",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=805",
+    "latitud":"43.29688372531966",
+    "longitud":"-2.986839620815956"
+  },
+  {
+    "nombre":"Yelmo Cines Megapark",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=453",
+    "latitud":"43.293484878966225",
+    "longitud":"-3.0046014630366953"
+  },
+  {
+    "nombre":"Social Antzokia Basauri",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=633",
+    "latitud":"43.23537284959738",
+    "longitud":"-2.8891516164895354"
+  },
+  {
+    "nombre":"Néstor Basterretxea Aretoa",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=724",
+    "latitud":"43.418785243051325",
+    "longitud":"-2.7237598164803476"
+  },
+  {
+    "nombre":"Cineclub FAS",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=717",
+    "latitud":"43.26063240720286",
+    "longitud":"-2.9396067316447323"
+  },
+  {
+    "nombre":"Cinesa Zubiarte",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=513",
+    "latitud":"43.26794465347404",
+    "longitud":"-2.940708874160376"
+  },
+  {
+    "nombre":"Golem Alhóndiga",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=299",
+    "latitud":"43.25985220413724",
+    "longitud":"-2.9365105746758706"
+  },
+  {
+    "nombre":"Multicines Bilbao",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=631",
+    "latitud":"43.26160098047478",
+    "longitud":"-2.9452568876519254"
+  },
+  {
+    "nombre":"Sala BBK",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=814",
+    "latitud":"43.26203742741061",
+    "longitud":"-2.930941587651893"
+  },
+  {
+    "nombre":"Gurea Aretoa",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=719",
+    "latitud":"43.2994321100164",
+    "longitud":"-2.8861338207088876"
+  },
+  {
+    "nombre":"Cine Zugaza",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=718",
+    "latitud":"43.169411369610685",
+    "longitud":"-2.630892734206631"
+  },
+  {
+    "nombre":"Arriola Kultur Aretoa",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=721",
+    "latitud":"43.13017387995804",
+    "longitud":"-2.5434532760210296"
+  },
+  {
+    "nombre":"Cinema Ermua",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=722",
+    "latitud":"43.18601194672909",
+    "longitud":"-2.5007276884033725"
+  },
+  {
+    "nombre":"Torrezabal Kultur Etxea",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=723",
+    "latitud":"43.23180380779836",
+    "longitud":"-2.844070620712258"
+  },
+  {
+    "nombre":"Teatro Lizeo Antzokia",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=729",
+    "latitud":"43.31521883925767",
+    "longitud":"-2.6767308072168414"
+  },
+  {
+    "nombre":"Getxo Zinemak",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=632",
+    "latitud":"43.34043741252888",
+    "longitud":"-3.016719780233068"
+  },
+  {
+    "nombre":"Lasarte Aretoa",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=725",
+    "latitud":"43.162679051402826",
+    "longitud":"-2.779029363043212"
+  },
+  {
+    "nombre":"Kultur Leioa Auditorium",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=809",
+    "latitud":"43.326901251024985",
+    "longitud":"-2.985843749543749"
+  },
+  {
+    "nombre":"Yelmo Cines Artea",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=298",
+    "latitud":"43.341555790732784",
+    "longitud":"-2.9883039114380843"
+  },
+  {
+    "nombre":"Cine Ikusgarri",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=727",
+    "latitud":"43.36359837083945",
+    "longitud":"-2.50586394768819"
+  },
+  {
+    "nombre":"Cine Torrebillela",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=728",
+    "latitud":"43.35324500414236",
+    "longitud":"-2.8482311630336956"
+  },
+  {
+    "nombre":"Olalde Aretoa",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=810",
+    "latitud":"43.35766990236143",
+    "longitud":"-2.8487968188522146"
+  },
+  {
+    "nombre":"Meatzari Aretoa",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=726",
+    "latitud":"43.32222755379663",
+    "longitud":"-3.1202692778651553"
+  },
+  {
+    "nombre":"Dock Cine Ballonti",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=571",
+    "latitud":"43.31195714386655",
+    "longitud":"-3.020057607217005"
+  },
+  {
+    "nombre":"Serantes Kultur Aretoa",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=634",
+    "latitud":"43.32649222808846",
+    "longitud":"-3.0326842630350317"
+  },
+  {
+    "nombre":"Sondikako Kultur Etxea",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=812",
+    "latitud":"43.29722407100079",
+    "longitud":"-2.9241669881652634"
+  },
+  {
+    "nombre":"Zalla Zine-Antzokia",
+    "url":"https://www.filmaffinity.com/es/theater-showtimes.php?id=813",
+    "latitud":"43.21220532072922",
+    "longitud":"-3.1366954606719135"
+  }
+]
